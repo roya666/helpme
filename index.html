@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+         <script src="https://script.google.com/macros/s/AKfycbymmWOHsSHKOJNsZsxADEOKM1HJUYsaqkMAa00q8l1NW9GU-IM/exec"></script>
+        <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style>
+        </style>
+    </head>
+    <body>
+
+<div id="navbar">
+    <img class="logo" src="Logo.svg">
+    <b onclick="openForm()">Connect</b>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">How it Works 
+      <i class="arrow"></i>
+    </button>
+    <div class="dropdown-content">
+         <a href="teachers.html">For Teachers</a>
+      <a href="Learner.html">For Learners</a>
+    </div>
+  </div> 
+<a class="active" href="index.html">Home</a>
+</div>
+        
+     <div class="form-popup" id="myForm">
+                   
+         
+         <form name="submit-to-google-sheet" class="form-container">
+             
+            <div id="form">
+                <img class="close" onclick="closeForm()" src="x.svg">
+                <br>
+                  <h1 class="left" style="color: white;"> Get started with a technology coach today</h1>
+            <p class="left" style="color: white;"> Tell us about yourself, what devices you own, and what you're looking to learn about. We will reach out and get you connected!</p>
+                <div class="halfColumn" style="padding-right: 5px;">
+                <input type="text" id="fname" name="firstname" placeholder="First Name" required>  
+                    <input type="text" id="phone" name="phonenumber" placeholder="&#40; &#95; &#95; &#95; &#41;  &#95; &#95; &#95;  &#45;  &#95; &#95; &#95; &#95;">
+                    </div>
+                <div class="halfColumn" style="padding-left: 5px;">
+                                <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                   
+
+         <textarea id="info" name="info" placeholder="Tell us about your devices and what you would like to learn..." required></textarea> 
+                      <input type="submit" style="width: 25%; float: right; margin-top: 20px;" value="Submit"> 
+                                </div>
+       
+</form> 
+             <div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+
+    <p class="js-success-message is-hidden" onclick="closeForm()">Success!</p>
+    <p class="js-error-message is-hidden" onclick="closeForm()">Error!</p>
+    </div>
+
+
+<div class="row">
+  <div class="halfColumn" style="padding-top: 60px; padding-right: 40px;">
+    <h1>Personalized technology education brought to you.</h1>
+    <p>Klari is a service that connects you to trained coaches for remote technology learning. Lorem ipsum more words, trying to think! More information lorem ipsum dolar sit amet. red bubbles like kitty cats and thats pretty cool. Here we are looking at.</p>
+  </div>
+  <div class="halfColumn">
+      <img src="imgHome.svg" style="float: right;">
+</div>
+</div>
+    <div class="row" style=" background:#E7F7FC;text-align: center; margin: 0;">
+        <h1 style="padding-top: 70px;">How It Works </h1>
+        <p style="width:40%; margin: auto;"> Klari works with you to lorem ipsum dolar sit amet. More of an opening description</p>
+        <div class="row">
+        <div class="thirdColumn">
+            <img src="getConnected.svg">
+            <h2> Get Connected</h2>
+            <p2>Lorem ipsum dolar sit amet, consecter adipscing elit. Vestibulum tempus commodo odio.</p2>
+        </div>
+                    <div class="thirdColumn">
+            <img src="Learn.svg">
+            <h2> Learn </h2>
+            <p2>Lorem ipsum dolar sit amet, consecter adipscing elit. Vestibulum tempus commodo odio.</p2>
+        </div>
+                    <div class="thirdColumn">
+            <img src="dailyUse.svg">
+            <h2> Daily Use</h2>
+            <p2>Lorem ipsum dolar sit amet, consecter adipscing elit. Vestibulum tempus commodo odio.</p2>
+        </div>
+        </div>
+    </div>
+        <div class="row" style="background: white; margin-top: 80px;">
+            <div class="halfColumn">
+                <img src="headshot.svg">
+            
+            </div>
+            <div class="halfColumn">
+                <h2> “Lorem ipsum quote text from customer about what they wanted to learn, getting started with Klari, and how the service has helped them since. Lorem ipsum dolar sit amet, consectetur adipiscing elit. Vestibulum tempus commodo odio.”
+                
+                </h2>
+                <p style="float: right;">- Barbara, 74</p>
+            
+            </div>
+        
+    </div>
+        <div class="row" style="background: #532689; margin: 0; ">
+            <div class="halfColumn" style="padding: 60px 80px 20px 80px">
+            <h1 style="color: white; "> Get started with a technology coach today</h1>
+            <p style="color: white;"> Tell us about yourself, what devices you own, and what you're looking to learn about. We will reach out and get you connected!</p>
+            </div>
+            </div>
+     <div class="row" style="background: #532689; margin: 0; padding: 0px 80px 60px 80px;">
+         <form name="submit-to-google-sheet">
+            <div class="halfColumn" style="padding-right: 20px;">
+                
+                <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                <input type="text" id="phone" name="phonenumber" placeholder="&#40; &#95; &#95; &#95; &#41;  &#95; &#95; &#95;  &#45;  &#95; &#95; &#95; &#95;">
+                            
+                </div>
+
+                <div class="halfColumn" style="padding-left: 0px;">
+                
+                <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                   
+                </div>
+         <textarea id="info" name="info" placeholder="Tell us about your devices and what you would like to learn..." required></textarea> 
+             <input type="submit" style="width: 25%; float: right; margin-top: 20px;" value="Submit"> 
+</form> 
+             <div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+
+    <p class="js-success-message is-hidden">Success!</p>
+    <p class="js-error-message is-hidden">Error!</p>
+    </div>
+    
+        <div class="footer">
+            <div class="thirdColumn">
+                <img src="Logo.svg" width="50%"><br>
+            <p2>Klari’s mission is to bring personalized tech lorem ipsum more of the mission statement. </p2>
+        
+        </div>
+            <div class="halfColumn" style="float: right;">
+            <div class="thirdColumn" >
+            <h3>More Info</h3>
+            <p3>FAQ</p3><br>
+            <p3>About Us</p3><br>
+            <p3>How It Works</p3>
+            </div>
+            <div class="thirdColumn" style="padding-right: 0;">
+                <h3>Social Media</h3>
+                <img class="icon" src="LI-In-Bug%201.svg" shape-rendering="crispEdges;">
+                <img class="icon"  src="f_logo_RGB-Blue_144%201.svg" shape-rendering="crispEdges;">
+                <img class="icon"  src="IG_Glyph_Fill%201.svg" shape-rendering="crispEdges;">
+                
+            </div>
+            </div>
+            </div>
+    
+
+<script>
+
+function openForm() {
+    $("#myForm").fadeIn();
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    $("myForm").fadeOut();
+  document.getElementById("myForm").style.display = "none";
+}  
+
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+      const scriptURL = 'https://script.google.com/a/stylesheets.co/macros/s/AKfycbzl3hk6JfWqMkVz8S1p5Txky_fscyNWJUCuQQHGHfVP5YLH99A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const loading = document.querySelector('.js-loading')
+    const successMessage = document.querySelector('.js-success-message')
+    const errorMessage = document.querySelector('.js-error-message')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      showLoadingIndicator()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => showSuccessMessage(response))
+        .catch(error => showErrorMessage(error))
+    })
+    
+
+    function showLoadingIndicator () {
+      form.classList.add('is-hidden')
+      loading.classList.remove('is-hidden')
+    }
+
+    function showSuccessMessage (response) {
+      console.log('Success!', response)
+      setTimeout(() => {
+        successMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+
+    function showErrorMessage (error) {
+      console.error('Error!', error.message)
+      setTimeout(() => {
+        errorMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+</script>
+
+    </body>
+</html>
