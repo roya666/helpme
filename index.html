@@ -21,7 +21,7 @@
   <a href="about.html">About Us</a>
   <div class="dropdown">
     <button class="dropbtn">How it Works 
-      <i class="arrow"></i>
+      <i class="arrow" style="padding:5px;margin:4px;"></i>
     </button>
     <div class="dropdown-content">
          <a href="teachers.html">For Teachers</a>
@@ -118,6 +118,7 @@
             <p style="color: white;"> Tell us about yourself, what devices you own, and what you're looking to learn about. We will reach out and get you connected!</p>
             </div>
             </div>
+        
      <div class="row" style="background: #532689; margin: 0; padding: 0px 80px 60px 80px;">
          <form name="submit-to-google-sheet">
             <div class="halfColumn" style="padding-right: 20px;">
@@ -196,7 +197,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-      const scriptURL = 'https://script.google.com/a/stylesheets.co/macros/s/AKfycbzl3hk6JfWqMkVz8S1p5Txky_fscyNWJUCuQQHGHfVP5YLH99A/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbymmWOHsSHKOJNsZsxADEOKM1HJUYsaqkMAa00q8l1NW9GU-IM/exec'
     const form = document.forms['submit-to-google-sheet']
     const loading = document.querySelector('.js-loading')
     const successMessage = document.querySelector('.js-success-message')
@@ -209,7 +210,6 @@ function myFunction() {
         .then(response => showSuccessMessage(response))
         .catch(error => showErrorMessage(error))
     })
-    
 
     function showLoadingIndicator () {
       form.classList.add('is-hidden')
